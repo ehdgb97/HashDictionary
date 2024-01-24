@@ -13,7 +13,11 @@ using namespace std;
 // 파일에 있는 스트링 저장용도.
 std::vector<std::string> g_string_Container;
 void LoadWordsFromFile(std::vector<std::string>& container);
-
+template<typename T>
+int increase(T t)
+{
+	return t + 1;
+}
 int main()
 {
 	Timer _profiler;
